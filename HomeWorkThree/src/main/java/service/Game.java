@@ -54,7 +54,7 @@ public class Game {
     */
     private void Run(PlayerOne playerOne, PlayerTwo playerTwo, char[][] boards, int num) throws ArrayIndexOutOfBoundsException {
         int count = num;
-        for (int i = 0; i < boards.length * boards.length; i++) {
+        for (int i = 0; i < boards.length * boards[0].length; i++) {
             count = count + i;
             if (count % 2 != 0) {
                 makingAMove = playerOne;
