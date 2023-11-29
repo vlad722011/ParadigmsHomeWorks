@@ -64,17 +64,17 @@ public class Game {
             }
             System.out.printf("Игрок %s введите координаты  поля, в которое хотите сделать ход:", makingAMove.getName());
             System.out.println();
-            System.out.println("Введите координату Х игрового поля (в интервале от 1 до 3): ");
+            System.out.println("Введите координату Х (номер строки) игрового поля (в интервале от 1 до 3): ");
             int x = scanner.nextInt() - 1;
-            System.out.println("Введите координату Y игрового поля (в интервале от 1 до 3): ");
+            System.out.println("Введите координату Y (номер столбца) игрового поля (в интервале от 1 до 3): ");
             int y = scanner.nextInt() - 1;
             try {
                 if (boards[x][y] == 'X' || boards[x][y] == '0') {
                     do {
                         System.out.println("Это поле уже занято, выберите другое поле для хода.");
-                        System.out.println("Введите координату Х игрового поля (в интервале от 1 до 3): ");
+                        System.out.println("Введите координату Х (номер строки) игрового поля (в интервале от 1 до 3): ");
                         x = scanner.nextInt() - 1;
-                        System.out.println("Введите координату Y игрового поля (в интервале от 1 до 3): ");
+                        System.out.println("Введите координату Y (номер столбца) игрового поля (в интервале от 1 до 3): ");
                         y = scanner.nextInt() - 1;
                     }
                     while (boards[x][y] != '*');

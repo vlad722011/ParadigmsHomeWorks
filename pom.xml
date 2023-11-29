@@ -11,6 +11,8 @@
     <modules>
         <module>HomeWorkOne</module>
         <module>HomeWorkTwo</module>
+        <module>HomeWorkThree</module>
+        <module>HomeWorkFour</module>
     </modules>
 
     <properties>
