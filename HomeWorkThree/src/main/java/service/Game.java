@@ -3,8 +3,6 @@ package service;
 import players.Player;
 import players.PlayerOne;
 import players.PlayerTwo;
-import players.PlayingField;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,23 +10,9 @@ public class Game {
     boolean isDraw = true;
     Scanner scanner = new Scanner(System.in);
     Random random = new Random();
-
-    PlayingField playingField = new PlayingField();
-
     Player makingAMove = new Player();
-    PlayerOne playerOne = new PlayerOne();
-    PlayerTwo playerTwo = new PlayerTwo();
 
-
-    public Game(PlayerOne playerOne, PlayerTwo playerTwo, PlayingField playingField) {
-        this.playerOne = playerOne;
-        this.playerTwo = playerTwo;
-        this.playingField = playingField;
-    }
-
-    char[][] boards = playingField.getPlayDesk();
-
-    public Game(Player one, Player two) {
+    public Game() {
     }
 
     public void gameRun(PlayerOne playerOne, PlayerTwo playerTwo, char[][] boards) throws ArrayIndexOutOfBoundsException {

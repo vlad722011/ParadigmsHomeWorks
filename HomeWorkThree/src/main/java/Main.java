@@ -27,7 +27,7 @@ public class Main {
          * Запускаем игру.
          */
 
-        Game game = new Game(one, two);
+        Game game = new Game();
         game.gameRun(one, two, boards );
 
     }
